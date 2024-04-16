@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weeb.css">
+</head>
+<body id="hl" >
+    
+  
+<div class="container">
+  <h1 id="f">YOGA STUDIO</h1>
+    <h2 id="g">relaxation to your physical and mental health</h2>
+  <video autoplay muted loop plays-inline class="vv">
+    <source src="bvv.gif.mp4" type="video/mp4" >
+  </video>
+</div>
+
+
+
+    
+   <br> <a href="html.html" class="btn color-03">
+      <span>KNOW MORE</span>
+    </a>
+    <script type="text/javascript">
+    const btns = document.querySelectorAll(".btn");
+
+    btns.forEach((btn) => {
+      btn.addEventListener("mousemove", function(e){
+        const position = btn.getBoundingClientRect();
+        const x = e.pageX - position.left - position.width / 2;
+        const y = e.pageY - position.top - position.height / 2;
+
+        btn.children[0].style.transform = "translate(" + x * 0.3 + "px, " + y * 0.5 + "px)";
+      });
+    });
+
+    btns.forEach((btn) => {
+      btn.addEventListener("mouseout", function(e){
+        btn.children[0].style.transform = "translate(0px, 0px)";
+      });
+    });
+    </script>
+
+
+
+
+    
+   
+    <script src="web.js"></script>
+</body>
+</html>
